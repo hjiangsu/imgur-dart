@@ -6,7 +6,7 @@ import 'package:imgur/imgur.dart';
 DotEnv env = DotEnv(includePlatformEnvironment: true)..load();
 
 void main() {
-  group('me', () {
+  group('image', () {
     test('can obtain image information from an id', () async {
       final Imgur imgur = Imgur(clientId: env['CLIENT_ID']!);
 
